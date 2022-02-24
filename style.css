@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900;1000&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+/*
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    height: 64px;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.menu a
+{
+    margin: 0px 10px;
+    font-size: 16px;
+}
+*/
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #FFFFFF;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 5px 10px rgba(66, 43, 151, 0.1);
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+    padding: 10px;
+
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #535262;
+    text-decoration: none;
+}
+button
+{
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.7s;
+}
+button:hover
+{
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+.hb
+{
+    height: 32px;
+}
+.cb
+{
+    border: none;
+    background: #3F3BCB;
+    color: #FFFFFF;
+}
+.wb
+{
+    background-color: #FFFFFF;
+    border: 1px solid #3F3BCB;
+    color: #3F3BCB;
+}
+.ltxt p
+{
+    font-size: 42px;
+    font-weight: 800;
+    color: #1F1E2D;
+    line-height: 60px;
+}
+.ltxt span
+{
+    color: #3F3BCB;
+}
+section
+{
+    margin: 0px auto;
+}
+.regtext
+{
+    font-size: 16px;
+    line-height: 30px;
+    color: #535262;
+}
+.lb
+{
+    margin: 30px 0px;
+}
+.lb button
+{
+    margin: 0px 10px;
+}
+.sector-one
+{
+    margin: 150px auto;
+    text-align: center;
+
+}
+.tbx
+{
+    width: 276px;
+    height: 80px;
+    background: #EFEFF3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+    margin: 20px;
+    transition: 0.7s;
+}
+.tbx:hover
+{
+    background: #3F3BCB;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.tbx p
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+.talentbx
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    justify-content: center;
+    
+}
+.sector-two
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    background: #F8F8FA;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.heading
+{
+    color: #1F1E2D;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.contents p
+{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #3F3BCB;
+}
+.sector-three
+{
+    display: flex;
+    max-width: 1280px;
+    margin: 30px;
+}
+.tbt
+{
+    width: 50%;
+    margin: 30px;
+}
+.tbt img
+{
+    width: 100%;
+    max-width: 565px;
+}
+.textleft
+{
+    text-align: left;
+}
+.tbt .btt img
+{
+    width: 16px;
+    margin-right: 10px;
+    min-width: unset;
+}
+.btt
+{
+    display: flex;
+    margin-top: 10px;
+}
+.one-button
+{
+    margin-top: 20px;
+    z-index: 999;
+}
+.sector-four
+{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    color: #000000;
+    border-radius: 20px;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sector-four img
+{
+    position: absolute;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+.sector-four .t
+{
+    margin-top: 50px;
+    z-index: 999;
+    width: 100%;
+    max-width: 600px;
+}
+.t b
+{
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.t p
+{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1280px;
+}
+.sector-five
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 80px 30px;
+    background-color: #FFFFFF;
+}
+.card
+{
+    width: 25%;
+    min-width: 120px;
+    max-width: 230px;
+    margin-right: 20px;
+    margin: 40px;
+}
+.smtext
+{
+    font-size: 14px;
+}
+.t1
+{
+    font-size: 16px;
+    font-weight: 800;
+    color: #3F3BCB;
+}
+.c
+{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.c img
+{
+    width: 48px;
+}
+.flex
+{
+    display: flex;
+}
+.jk
+{
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    flex-wrap: wrap;
+}
+.ft
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8FA;
+    padding: 30px;
+}
+.ht
+{
+    height: 36px;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 20px;
+    display: flex;
+}
+footer
+{
+    margin-top: 30px;
+    padding: 20px;
+}
+.abt
+{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.sector-abt
+{
+    align-items: center;
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    height: 90vh;
+}
+.tbt
+{
+    width: 45%;
+}
+.tbt img
+{
+    width: 100%;
+    min-width: 400px;
+}
+.tbt p
+{
+    width: 100%;
+}
+.bger
+{
+    font-size: 24px;
+    line-height: 36px;
+}
+.tbt .ltxt
+{
+    padding-top: 50px;
+}
+.bx
+{
+    max-width: 500px;
+    margin: auto;
+}
+.hbb .cb, .hbb .wb
+{
+    margin: 10px;
+}
+
+
+/*responsiveness*/
+
+
+@media(max-width: 991px)
+{
+    .regtext
+    {
+        font-size: 14px;
+    }
+    .ltxt p
+    {
+        font-size: 36px;
+    }
+    button
+    {
+        font-size: 12px;
+    }
+    .menu a
+    {
+        font-size: 14px;
+        margin: 0px 5px;
+        width: 100%;
+        height: 40px;
+    }
+    .sector-three
+    {
+        display: block;
+        max-width: unset;
+    }
+    .tbt
+    {
+        width: 90%;
+    }
+    .sector-four
+    {
+        flex-direction: column;
+        padding: 0px 20px;
+        margin: 50px auto;
+    }
+    .sector-four .t
+    {
+        margin-bottom: 50px;
+    }
+    .sector-four img
+    {
+        position: unset;
+        width: 90%;
+        max-width: unset;
+        margin: auto;
+    }
+    .t b
+    {
+        color: #535262;
+        font-size: 28px;
+    }
+    .t p
+    {
+        font-size: 14px;
+        color: #535262;
+    }
+    .card
+    {
+        min-width: 190px;
+        margin: 20px;
+    }
+    .toggle
+    {
+        width: 30px;
+        height: 30px;
+        background: url(image/menu.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        cursor: pointer;
+    }
+    .toggle.active
+    {
+        background: url(image/close.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+        cursor: pointer;
+    }
+    .menu
+    {
+        position: fixed;
+        top: 75px;
+        left: 100%;
+        display: block;
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+    }
+    .menu.active
+    {
+        left: 0;
+    }
+    .tbt .ltxt
+    {
+        padding-top: 150px;
+    }
+    .sector-abt
+    {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .tbt
+    {
+        width: 90%;
+    }
+    footer .regtext
+    {
+        font-size: 14px;
+    }
+    .sector-one
+    {
+        padding: 0px 20px;
+    }
+    .sector-three .bimg img
+    {
+        min-width: unset;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .bimg
+    {
+        margin: auto;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 600px)
+{
+    .sector-four img
+    {
+        display: none;
+    }
+    .sector-five
+    {
+        padding: 30px;
+    }
+    footer
+    {
+        margin-top: 0px;
+    }
+    .ft
+    {
+        padding: 20px;
+    }
+    .ht hr
+    {
+        display: none;
+    }
+    .ht
+    {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .tbt .ltxt
+    {
+        padding-top: 80px;
+    }
+    .bim
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .bimg img
+    {
+        min-width: unset;
+    }
+    .sector-one
+    {
+        width: 90%;
+    }
+    .sector-two
+    {
+        padding: 50px 0px;
+    }
+    .sector-five
+    {
+        padding: 30px;
+    }
+    .hb
+    {
+        height: 40px;
+        width: 80%;
+    }
+}
