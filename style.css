@@ -265,7 +265,6 @@ section
     flex-wrap: wrap;
     width: 100%;
     max-width: 1280px;
-    justify-content: center;
 }
 .sector-five
 {
@@ -589,6 +588,11 @@ div.tgrid p a{
     {
         padding-top: 80px;
     }
+    .ltxt p
+    {
+        font-size: 24px;
+        line-height: 36px;
+    }
     .bim
     {
         width: 90%;
@@ -609,5 +613,15 @@ div.tgrid p a{
     .sector-five
     {
         padding: 30px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .card{
+        min-width: unset;
+        margin: 0;
+        width: 100%;
     }
 }
