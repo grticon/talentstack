@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -15,14 +17,14 @@
                 <img src="image/logo.svg">
             </a>
         </div>
-            <div class="toggle" onclick="toggleMenu();"></div>
-            <ul class="menu">
-                <li><a href="/" onclick="toggleMenu();">Home</a></li>
-                <li><a href="/about.html" onclick="toggleMenu();">About us</a></li>
-                <li><a href="" onclick="toggleMenu();">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="/" onclick="toggleMenu();">Home</a></li>
+            <li><a href="/about" onclick="toggleMenu();">About us</a></li>
+            <li><a href="" onclick="toggleMenu();">
                     <button class="bb">Add a listing</button>
                 </a></li>
-            </ul>
+        </ul>
     </header>
     <section class="hero">
         <div class="sector-one">
@@ -31,7 +33,7 @@
             </div>
             <div>
                 <p class="regtext">
-                    We keep your organization well-staffed so your business runs smoothly and optimally. 
+                    We keep your organization well-staffed so your business runs smoothly and optimally.
                 </p>
             </div>
             <div class="lb">
@@ -41,6 +43,23 @@
             </div>
         </div>
     </section>
+
+    <section class="black">
+        <div class="top">
+            <p>Used by 15,000+ businesses from small startups to household names</p>
+        </div>
+        <div class="gallery">
+            <img src="./image/forever.svg" width="100" alt="">
+            <img src="./image/reebok.svg" alt=""width="100">
+            <img src="./image/intercom.svg" width="100" alt="">
+            <img src="./image/notion.svg" alt="" width="100">
+            <img src="./image/rev.svg" width="100" alt="">
+            <img src="./image/subway.svg" alt="" width="100">
+            <img src="./image/reddit.svg" width="100" alt="">
+            <img src="./image/ck.svg" alt="" width="100">
+        </div>
+    </section>
+
     <section>
         <div class="sector-two">
             <b class="heading">Discover great talent</b>
@@ -85,7 +104,7 @@
         </div>
     </footer>
     <script type="text/javascript">
-        window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function () {
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
@@ -96,20 +115,52 @@
             menuToggle.classList.toggle('active');
             menu.classList.toggle('active');
         }
-        </script>
-        <style>
-            section.hero{
-                background: url(./image/background.png);
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                padding: 50px ;
+    </script>
+    <style>
+        section.hero {
+            background: url(./image/background.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px;
+        }
+       
+section.black{
+    background-color: #000;
+    display: grid;
+    position: relative;
+    padding: 0px 50px 20px;
+}
+section.black p{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+div.gallery{
+    display: flex;
+    gap: 40px;
+    overflow-x: hidden;
+    width: 100%;
+    
+}
+div.gallery img{
+    /* width: 100px; */
+    height: 25px !important;
+}
+@media(max-width: 600px) {
+            section.hero {
+                background-size: cover;
             }
-            @media(max-width: 600px){
-                section.hero{
-                    background-size: cover;
-                }
+            section.black{
+                padding: 0px 20px 20px;
             }
-        </style>
+            div.gallery{
+                overflow-x: scroll;
+            }
+        }
+    </style>
 </body>
+
 </html>
