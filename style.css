@@ -34,7 +34,7 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 30px;
+    padding: 10px 40px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@ header
 header.sticky
 {
     background: #fff;
-    padding: 20px;
+    padding: 10px 30px;
     box-shadow: 0 5px 10px rgba(66, 43, 151, 0.1);
 }
 header ul
